@@ -1,0 +1,16 @@
+{% extends "padre.html" %}
+
+
+{% block formulario %}
+
+    <form action = "/AppCotizador/buscar_product/" method = "get"> {% csrf_token %}
+
+        <input type = "text" name = "part_number">
+
+        <input type = "submit">
+    
+    </form>
+
+    <p> {{mensaje}} </p>
+
+{% endblock %}

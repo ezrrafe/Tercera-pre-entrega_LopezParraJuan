@@ -1,0 +1,29 @@
+{% extends "padre.html" %}
+
+
+{% block titulo_pagina %}
+CREAR DIMENSION
+{% endblock %}
+
+
+{% block titulo %}
+information about
+{% endblock %}
+
+
+{% block letrero %}
+CREATE DIMENSIONS
+{% endblock %}
+
+
+{% block formulario %}
+
+    <form action = "/AppCotizador/crear_dimension/" method = "POST"> {% csrf_token %}
+
+        {{formu}}
+
+        <input type = "submit">
+    
+    </form>
+
+{% endblock %}

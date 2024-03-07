@@ -1,0 +1,29 @@
+{% extends "padre.html" %}
+
+
+{% block titulo_pagina %}
+CREAR TOOLING
+{% endblock %}
+
+
+{% block titulo %}
+information about
+{% endblock %}
+
+
+{% block letrero %}
+CREATE TOOLINGS
+{% endblock %}
+
+
+{% block formulario %}
+
+    <form action = "/AppCotizador/crear_tooling/" method = "POST"> {% csrf_token %}
+
+        {{formu}}
+
+        <input type = "submit">
+    
+    </form>
+
+{% endblock %}
